@@ -1,0 +1,131 @@
+body{
+    text-align: center;
+    background-image: url(bg.png);
+    font-family: 'Arial', sans-serif;
+    color: white;
+}
+
+h1{
+    font-size: 3rem;
+    color: #ffff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+h3{
+    font-family: share tech, sans-serif;
+    font-size: 1.5rem;
+    margin-top: 40px;
+}
+
+.age-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+    font-family: bitcount grid single, sans-serif;
+    font-size: 1.2rem;
+}
+
+.age-box{
+    width: 120px;
+    height: 120px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 0px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+    position: relative;
+}
+
+.age-box:hover{
+    transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.photo-gallery{
+    display: flexbox;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.photo-gallery img{
+    width: 250px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.photo-gallery img:hover{
+    transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.7);
+}
+
+label{
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    margin-top: 70px;
+    font-family: bitcount grid single, sans-serif;
+}
+
+textarea{
+    padding: 50px 30px;
+}
+
+button{
+    background-color: #3e4b64;
+    color: white;
+    border: none;
+    padding: 5px 12px;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-family: bitcount grid single, sans-serif;
+    margin-top: 20px;
+}
+
+button:hover{
+    background-color: rgba(255, 255, 255, 0.4);
+    transform: scale(1.05);
+}
+
+#alert{
+    margin-top: 30px;
+    font-family: bitcount grid single, sans-serif;
+    color: aqua;
+}
+
+
+    /* 🔽 UNTUK TABLET 🔽 */
+    @media (min-width: 481px) and (max-width: 768px) {
+        .photo-gallery img{
+        width: 45%;
+        max-width: 500px;
+        }
+
+    label{
+        margin-left: 50px;
+    }
+
+      form {
+        width: 70%;
+        max-width: 300px;
+        text-align: center;
+        margin-left: 60px;
+      }
+
+      textarea{
+        max-width: 100%;
+      }
+
+      button{
+        margin-left: 50px;
+      }
+    }
